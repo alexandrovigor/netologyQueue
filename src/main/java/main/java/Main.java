@@ -1,13 +1,15 @@
+package main.java;
+
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Deque<Person> attraction = new LinkedList<>(generateClients());
+        Deque<main.java.Person> attraction = new LinkedList<>(generateClients());
 
         while (!attraction.isEmpty()) {
-            Person person = attraction.pollFirst();
+            main.java.Person person = attraction.pollFirst();
             if (person.getTickets() > 1) {
                 attraction.offerLast(person);
                 person.useTicket();

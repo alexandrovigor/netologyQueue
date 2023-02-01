@@ -1,3 +1,5 @@
+package main.java;
+
 public class Person {
     private int tickets;
     private String name;
